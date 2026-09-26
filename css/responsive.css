@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+  .nav { position: absolute; top: 84px; left: 18px; right: 18px; display: none; flex-direction: column; align-items: flex-start; gap: 12px; padding: 18px 20px 22px; background: rgba(255,255,255,0.96); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); }
+  .nav.is-open { display: flex; }
+  .menu-toggle { display: block; }
+  .hero-inner, .about-grid, .contact-wrap, .achievement-layout { grid-template-columns: 1fr; }
+  .skills-grid, .project-list, .activity-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .container, .narrow { width: min(100% - 28px, 100%); }
+  .hero-actions { display: grid; grid-template-columns: 1fr; }
+  .btn { width: 100%; }
+  .portrait-frame { height: 440px; }
+  .section-light, .section-soft, .projects, .contact { padding: 80px 0; }
+  .site-footer { flex-direction: column; align-items: flex-start; }
+  .footer-links { flex-wrap: wrap; }
+}
